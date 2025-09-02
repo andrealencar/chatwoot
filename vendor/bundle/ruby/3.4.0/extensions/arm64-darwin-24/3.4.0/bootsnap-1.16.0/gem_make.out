@@ -1,0 +1,18 @@
+current directory: /Users/andrealencar/WebstormProjects/chatwoot/vendor/bundle/ruby/3.4.0/gems/bootsnap-1.16.0/ext/bootsnap
+/Users/andrealencar/.rbenv/versions/3.4.4/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/andrealencar/WebstormProjects/chatwoot/vendor/bundle/ruby/3.4.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20250901-91209-3xjaxg sitelibdir\=./.gem.20250901-91209-3xjaxg clean
+
+current directory: /Users/andrealencar/WebstormProjects/chatwoot/vendor/bundle/ruby/3.4.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20250901-91209-3xjaxg sitelibdir\=./.gem.20250901-91209-3xjaxg
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/andrealencar/WebstormProjects/chatwoot/vendor/bundle/ruby/3.4.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20250901-91209-3xjaxg sitelibdir\=./.gem.20250901-91209-3xjaxg install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20250901-91209-3xjaxg/bootsnap
+
+current directory: /Users/andrealencar/WebstormProjects/chatwoot/vendor/bundle/ruby/3.4.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20250901-91209-3xjaxg sitelibdir\=./.gem.20250901-91209-3xjaxg clean
