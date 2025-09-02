@@ -8,17 +8,17 @@ Export environment variables and run rake task with `bundle exec rails branding:
 > Unset environment variables are reset to default values.
 
 ```bash
-INSTALLATION_NAME="Chatwoot fazer.ai" \
-BRAND_NAME="My Company" \
-LOGO_THUMBNAIL="https://fazer.ai/logo-thumbnail.svg" \
-LOGO="https://fazer.ai/logo.svg" \
+INSTALLATION_NAME="TurboChat" \
+BRAND_NAME="TurboChat" \
+LOGO_THUMBNAIL="https://shop.aalencar.com.br/cdn/shop/files/empreendedor_serial_icone.png?v=1724191798&width=100" \
+LOGO="https://shop.aalencar.com.br/cdn/shop/files/empreendedor_serial_icone.png?v=1724191798&width=200" \
 bundle exec rails branding:update
 ```
 
 | Environment variable | Default Value                               | Description                                                           |
 | :--------------------| :------------------------------------------ | :-------------------------------------------------------------------- |
 | `INSTALLATION_NAME`  | `Chatwoot`                                  | The installation-wide name used in the dashboard, title, etc.         |
-| `LOGO_THUMBNAIL`     | `/brand-assets/logo_thumbnail.svg`          | The thumbnail used for favicon (512px X 512px).                       |
+| `INSTALLATION_NAME`     | `/brand-assets/logo_thumbnail.svg`          | The thumbnail used for favicon (512px X 512px).                       |
 | `LOGO`               | `/brand-assets/logo.svg`                    | The logo used on the dashboard, login page, etc.                      |
 | `LOGO_DARK`          | `/brand-assets/logo_dark.svg`               | The logo used on the dashboard, login page, etc. for dark mode.       |
 | `BRAND_URL`          | `https://www.chatwoot.com`                  | The URL used in emails under the section “Powered By”.                |
