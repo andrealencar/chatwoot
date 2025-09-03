@@ -1,6 +1,6 @@
 # ------- Branding Related Config ------- #
 - name: INSTALLATION_NAME
-  value: 'Chatwoot'
+  value: 'TurboChat'
 - name: LOGO_THUMBNAIL
   value: '/brand-assets/logo_thumbnail.svg'
 - name: LOGO
@@ -11,7 +11,7 @@
   value: 'https://www.chatwoot.com'
 - name: WIDGET_BRAND_URL
   value: 'https://www.chatwoot.com'
-- name: BRAND_NAME
+- name: TurboChat
   value: 'Chatwoot'
 - name: TERMS_URL
   value: 'https://www.chatwoot.com/terms-of-service'
