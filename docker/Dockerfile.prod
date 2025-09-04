@@ -1,0 +1,61 @@
+# syntax=docker/dockerfile:1.7
+
+############################
+# Etapa 1: Builder
+############################
+FROM chatwoot/chatwoot:latest AS builder
+WORKDIR /app
+
+RUN apk add --no-cache \
+  build-base linux-headers \
+  git \
+  nodejs npm \
+  openssl openssl-dev \
+  libffi-dev \
+  postgresql-dev
+
+RUN bundle config build.pg --with-pg-config=/usr/bin/pg_config \
+ && bundle config build.openssl --with-openssl-dir=/usr
+
+COPY Gemfile Gemfile.lock ./
+RUN bundle config set path vendor/bundle \
+ && bundle install --without development test
+
+RUN npm i -g pnpm@10
+
+COPY package.json pnpm-lock.yaml ./
+RUN pnpm install --frozen-lockfile --prod=false
+
+COPY . .
+
+# 🚀 Usa ~12GB de heap do Node durante o build (Vite)
+ENV RAILS_ENV=production \
+    NODE_ENV=production \
+    NODE_OPTIONS="--max-old-space-size=12288"
+
+RUN SECRET_KEY_BASE=dummy bundle exec rails assets:precompile
+
+############################
+# Etapa 2: Runtime
+############################
+FROM chatwoot/chatwoot:latest AS runtime
+WORKDIR /app
+
+RUN apk add --no-cache \
+  nodejs \
+  openssl \
+  postgresql-libs \
+  tzdata
+
+ENV RAILS_ENV=production \
+    NODE_ENV=production \
+    RAILS_SERVE_STATIC_FILES=true \
+    BUNDLE_WITHOUT="development:test"
+
+COPY --from=builder /app /app
+
+# Limpa o NODE_OPTIONS no runtime (não precisa de 12GB em produção)
+ENV NODE_OPTIONS=""
+
+EXPOSE 3000
+CMD ["bundle", "exec", "puma", "-C", "config/puma.rb"]
