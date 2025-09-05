@@ -3,6 +3,7 @@
 # # This is set to run against merges to develop, master
 # # and when tags are created.
 # #
+##
 
 name: Publish Chatwoot EE docker images
 
