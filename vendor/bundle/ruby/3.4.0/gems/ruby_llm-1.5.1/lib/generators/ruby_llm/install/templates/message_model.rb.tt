@@ -1,3 +1,0 @@
-class <%= options[:message_model_name] %> < ApplicationRecord
-  <%= acts_as_message_declaration %>
-end

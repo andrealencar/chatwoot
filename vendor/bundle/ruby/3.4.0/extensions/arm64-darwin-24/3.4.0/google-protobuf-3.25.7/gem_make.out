@@ -1,3 +1,0 @@
-current directory: /Users/andrealencar/WebstormProjects/chatwoot/vendor/bundle/ruby/3.4.0/gems/google-protobuf-3.25.7/ext/google/protobuf_c
-/Users/andrealencar/.rbenv/versions/3.4.4/bin/ruby -rrubygems /Users/andrealencar/WebstormProjects/chatwoot/vendor/bundle/ruby/3.4.0/gems/rake-13.2.1/exe/rake RUBYARCHDIR\=/Users/andrealencar/WebstormProjects/chatwoot/vendor/bundle/ruby/3.4.0/extensions/arm64-darwin-24/3.4.0/google-protobuf-3.25.7 RUBYLIBDIR\=/Users/andrealencar/WebstormProjects/chatwoot/vendor/bundle/ruby/3.4.0/extensions/arm64-darwin-24/3.4.0/google-protobuf-3.25.7
-Skipping build of FFI; `gem install ffi-compiler` to enable.
