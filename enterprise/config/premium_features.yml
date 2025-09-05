@@ -2,6 +2,6 @@
 - disable_branding
 - audit_logs
 - response_bot
-#- sla
+- sla
 - captain_integration
 - custom_roles
