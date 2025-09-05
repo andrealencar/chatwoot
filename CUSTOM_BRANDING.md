@@ -7,8 +7,8 @@ Export environment variables and run rake task with `bundle exec rails branding:
 > Unset environment variables are reset to default values.
 
 ```bash
-INSTALLATION_NAME="TurboChat" \
-BRAND_NAME="TurboChat" \
+INSTALLATION_NAME="TurboWhats" \
+BRAND_NAME="TurboWhats" \
 LOGO_THUMBNAIL="https://shop.aalencar.com.br/cdn/shop/files/empreendedor_serial_icone.png?v=1724191798&width=100" \
 LOGO="https://shop.aalencar.com.br/cdn/shop/files/empreendedor_serial_icone.png?v=1724191798&width=200" \
 bundle exec rails branding:update
