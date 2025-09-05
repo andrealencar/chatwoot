@@ -1,5 +1,4 @@
 # Custom branding
-
 ## Brand configuration
 
 Export environment variables and run rake task with `bundle exec rails branding:update`.
